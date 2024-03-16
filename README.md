@@ -19,15 +19,26 @@ SunriseSunsetView library allows developers to easily incorporate sunrise and su
 
 To use the SunriseSunsetView library in your Android project, follow these steps:
 
-1. Add the library to your project dependencies.
+1. Add the JitPack repository to your build file 
+```groovy
+dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
+
+2. Add the library to your project dependencies.
+```groovy
 dependencies {
-    implementation 'com.example:sunrisesunsetview:1.0.0'
+    implementation 'com.github.th3adittya:Sunrise-Sunset-Animation:v1.0.0.0'
 }
 ```
-2. Instantiate SunriseSunsetView in your layout XML file.
-```
-<com.example.sunrisesunsetview.SunriseSunsetView
+3. Instantiate SunriseSunsetView in your layout XML file.
+```xml
+<com.hexapalsllc.sunrisesunsetanimation.SunriseSunsetView
     android:id="@+id/sunrise_sunset_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -37,7 +48,7 @@ dependencies {
     />
 ```
 3. Customize the view attributes as needed.
-```
+```xml
 app:ssv_track_color="#FF0000"
 app:ssv_sun_color="#FFFF00"
 app:ssv_label_text_color="#000000"
@@ -45,7 +56,7 @@ app:ssv_label_text_color="#000000"
 
 4. Set the sunrise and sunset times programmatically.
 
-```
+```java
 SunriseSunsetView sunriseSunsetView = findViewById(R.id.sunrise_sunset_view);
 sunriseSunsetView.setSunriseTime("6:00 AM");
 sunriseSunsetView.setSunsetTime("6:00 PM");
