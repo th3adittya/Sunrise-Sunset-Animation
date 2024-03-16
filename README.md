@@ -1,5 +1,7 @@
 # SunriseSunsetView Library
 
+[![](https://jitpack.io/v/th3adittya/Sunrise-Sunset-Animation.svg)](https://jitpack.io/#th3adittya/Sunrise-Sunset-Animation)
+
 SunriseSunsetView is an Android library written in Java that provides functionality for displaying sunrise and sunset times with animation.
 
 ## Table of Contents
