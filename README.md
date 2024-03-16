@@ -35,7 +35,7 @@ dependencyResolutionManagement {
 2. Add the library to your project dependencies.
 ```groovy
 dependencies {
-    implementation 'com.github.th3adittya:Sunrise-Sunset-Animation:v1.0.0.0'
+    implementation 'com.github.th3adittya:Sunrise-Sunset-Animation:20240317'
 }
 ```
 3. Instantiate SunriseSunsetView in your layout XML file.
